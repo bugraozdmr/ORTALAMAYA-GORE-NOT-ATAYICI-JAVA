@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class deneme{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Vize 1 giriniz :");
+        int vize1 = scanner.nextInt();
+        System.out.print("Vize 2 giriniz :");
+        int vize2 = scanner.nextInt();
+        System.out.print("Final giriniz :");
+        int finall = scanner.nextInt();
+        System.out.print("Okul ortalamanız :");
+        double ortalama = scanner.nextDouble();
+        double genel_ort = (vize1*0.3)+(vize2*0.3)+(finall*0.4);
+        if (genel_ort>=90) {
+            System.out.println("AA");
+        }
+        else if (genel_ort >= 85){
+            System.out.println("AB");
+        }
+        else if (genel_ort >= 80) {
+            System.out.println("BB");
+        }
+        else if (genel_ort>=75) {
+            System.out.println("BC");
+        }
+        else if (genel_ort>=70) {
+            System.out.println("CC");
+        }
+        else if (genel_ort>=65)  {
+            System.out.println("DC");
+        }
+        else if (genel_ort>=60) {
+            System.out.println("DD");
+            if(ortalama<2.5){
+                System.out.println("Ortalamanız düşük ve DD aldınız .Bu dersi tekrar almayı düşünmelisiniz !");
+            }
+        }
+        else if (genel_ort>=55) {
+            System.out.println("FD aldınız ve kaldınız");
+        }
+        else if (genel_ort<55) {
+            System.out.println("FF aldınız ve kaldınız");
+        }
+    }
+}
